@@ -1,52 +1,35 @@
-✈️ #AI-Powered Assistant Suite for Tweets, Weather, and Flights
-This project contains a multi-functional set of AI agents powered by LangChain, Groq, and external APIs. The system supports:
+✈️ AI Assistant Suite: Tweets, Weather, and Flights
+This project features a collection of intelligent agents built using LangChain, LangGraph, and Groq's LLaMA 3 models. It includes agents for tweet generation, weather forecasting, and flight lookup—all powered by LLMs and real-world data APIs.
 
-Tweet drafting and reflection via LLM
+📁 Project Overview
 
-Flight lookup based on user natural language queries
+  Module	Functionality
+  
+    main.py	Weather assistant using location extraction + API
+    
+    flight_booking_agent.py	Conversational flight booking with IATA lookup
+    
+    chains.py	Viral tweet generation and tweet reflection
+    
+🧠 Core Features
 
-Weather forecasting using location extraction + OpenWeatherMap API
+✅ Natural language understanding with LLMs
 
-🔧 Project Structure
-main.py – 🌤️ Weather Agent
-Extracts city name from a user's weather-related question using the Groq LLM (LLaMA 3).
+☁️ Real-time weather info using OpenWeatherMap API
 
-Fetches current weather via OpenWeatherMap.
+✈️ Flight search automation via AviationStack API
 
-Built using LangGraph to define a two-node workflow:
+🐦 Smart tweet writing and critique via prompt chains
 
-Node 1: agent (City extractor)
+🔄 LangGraph workflows with step-by-step agent logic
 
-Node 2: weather_tool (API call and response)
 
-flight_booking_agent.py – 🛫 Flight Finder Agent
-Parses natural queries like "Find flights from Delhi to New York".
+🔧 Installation & Setup Requirements
 
-Uses Groq LLM to extract source/destination cities and resolve IATA airport codes.
-
-Queries AviationStack API to get real-time flight data.
-
-Returns clean, readable flight options with departure/arrival times.
-
-Workflow defined using 4 chained nodes:
-
-extract_cities
-
-airport_lookup
-
-flight_search
-
-respond
-
-chains.py – 🐦 Tweet Generation and Review
-Uses LangChain Prompt Templates to:
-
-Generate viral tweets based on input.
-
-Reflect and critique user-submitted tweets with suggestions.
-
-Chains:
-
-generate_chain – Generates tweet drafts.
-
-reflect_chain – Evaluates and recommends improvements.
+  Python 3.9+
+ 
+   Groq API Key
+ 
+   OpenWeatherMap API Key
+ 
+   AviationStack API Key

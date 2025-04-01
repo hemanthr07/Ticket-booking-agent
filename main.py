@@ -6,9 +6,9 @@ from langgraph.graph import Graph
 import os
 
 # Set environment variables for APIs
-groqcloud_api_key = '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'
+groqcloud_api_key = 'KEY'
 os.environ['GROQCLOUD_API_KEY'] = groqcloud_api_key
-os.environ["OPENWEATHERMAP_API_KEY"] = 'b7dafda0e767594859abcd01cd29f629'
+os.environ["OPENWEATHERMAP_API_KEY"] = 'KEY'
 
 # Initialize GroqCloud API
 groq_llm = Groq(api_key=groqcloud_api_key)

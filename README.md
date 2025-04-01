@@ -1,4 +1,4 @@
-#✈️ AI-Powered Assistant Suite for Tweets, Weather, and Flights
+✈️ #AI-Powered Assistant Suite for Tweets, Weather, and Flights
 This project contains a multi-functional set of AI agents powered by LangChain, Groq, and external APIs. The system supports:
 
 Tweet drafting and reflection via LLM

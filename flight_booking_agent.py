@@ -5,8 +5,8 @@ from groq import Groq
 from langgraph.graph import Graph
 
 # Load API Keys from Environment Variables
-groq_api_key = "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"
-aviation_api_key = "0d69cdbfc33105bb37443b997fd9dafa"
+groq_api_key = "KEY"
+aviation_api_key = "KEY"
 
 
 # Initialize Groq LLM
